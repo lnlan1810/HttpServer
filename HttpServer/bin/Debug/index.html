@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a
+{
+    color: #111;
+    text-decoration: none;
+    font-size: 13px;
+}
+section header ul li button
+{
+    background: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+section .main
+{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .main .searchBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section .main .searchBox .search
+{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+
+}
+section .main .searchBox .icons
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+section .main .buttons
+{
+    margin-top: 20px;
+}
+
+section .main .buttons button
+{
+    margin:  0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    outline: none;
+}
+section .main .buttons button :hover
+{
+border: 1px solid #ccc;
+}
+section .footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+section .footer .row
+{
+    padding: 15px 25px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    
+}
+section .footer .row.row2
+{
+    display: flex;
+    justify-content: space-between;
+}
+section footer .row.row2 ul
+{
+    display: flex;
+}
+section .footer .row.row2 ul li
+{
+    list-style: none;
+}
+section .footer .row.row2 ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+section .footer .row.row2 ul:nth-child(2) li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 0px;
+    margin-left: 25px;
+}
+    </style>
+    
+</head>
+
+<body>
+    <section>
+        <header>
+            <ul>
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+                <li><a href="https://drive.google.com/">Drive</a></li>
+                <li><a href="#"><img src="bars.png"></a></li>
+                <li><button><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1493303254%3A1662406747996925&continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=AddSession">Sign In</a> </button></li>
+            </ul>
+        </header>
+
+        <div class="main">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            <div class="searchBox">
+                <input type="text" class="search">
+                <div class="icons">
+                    <div><img src="search.png"></div>
+                    <div><img src="https://www.google.com/tia/tia.png"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>
+                    Google Searcch
+                </button>
+                <button>See the first page found</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row row1">
+                <p class="country">Russia</p>
+            </div>
+            <div class="row row2">
+                <ul>
+                    <li><a href="https://ads.google.com/intl/vi_ru/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                    <li><a href="https://about.google/?utm_source=google-RU&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=vi-RU&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=vi-RU&fg=1">Terms</a></li>
+                    <li><a href="https://www.google.com/preferences?hl=ru&fg=1">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
